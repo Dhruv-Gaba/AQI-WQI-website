@@ -20,3 +20,11 @@ Welcome to the AQI WQI Monitoring Website developed as part of the Smart India H
 
 - **Intuitive Design:** A user-friendly interface ensures easy navigation and understanding of environmental data.
 - **Visual Representation:** Graphs and charts visually represent AQI and WQI trends, making it accessible for all users.
+
+## Features
+
+- Real-time monitoring of Air and Water Quality Index.
+- Historical data visualization for trend analysis.
+- Location-based search for customized information.
+- User-friendly interface for easy navigation.
+- Responsive design for compatibility with various devices.
