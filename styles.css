@@ -1,0 +1,391 @@
+body{
+    margin:0;
+}
+
+#top{
+    width:100%;
+    height:58px;
+    background-color:#9283CE;
+    margin:0;
+}
+
+.govt{
+    height:100px;
+    width:170px;
+    position:absolute;
+    left:15%;
+    margin-top:5px;
+}
+
+.gok{
+    position:absolute;
+    left:27%;
+    font-size:45px;
+    margin-top:25px;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+.navigation{
+    height:75px;
+    width:100%;
+    background-color:#CBCDF8;
+    margin-top:110px;
+}
+
+.options{
+    display:inline;
+}
+
+.btn-light{
+    width:140px;
+    position:relative;
+    top:15px;
+    margin:0 110px;
+}
+
+.home,.graphkp{
+    position:relative;
+    top:4px;
+}
+
+.help,.map{
+    position:relative;
+    top:5px;
+}
+
+.abt{
+    display:inline-block;
+    margin:10px 0 0 20px;
+    width:70.8%;
+    padding:10px;
+    text-align:justify;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size:1.2em;
+    background-color:#FFE6B6;
+}
+
+#air,#water{
+    font-family: 'Noticia Text', serif;
+}
+
+.images{
+    top:50px;
+    margin-top: 450px;
+    position:absolute;
+    top:243px;
+    right:0px;
+    height:1165px;
+    width:28%;
+    background-color:rgba(217, 217, 217, 0.5);
+}
+
+#pm{
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    position:absolute;
+    top:60px;
+    right:90px;
+}
+
+#pm_lb{
+    position:absolute;
+    right:120px;
+    text-align:center;
+    top:320px;
+}
+
+#cm{
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    position:absolute;
+    top:430px;
+    right:90px;
+}
+
+#cm_lb{
+    position:absolute;
+    top:690px;
+    right:120px;
+    text-align:center;
+}
+
+#air_index{
+    margin-left:18%;
+}
+
+#water_index{
+    margin-left:35%;
+    width:350px;
+}
+
+#searchbar{
+    position:relative;
+    top:200px;
+    background-color:#C04545;
+    height:50px;
+    width:98%;
+    margin:auto;
+}
+
+#searchbar input{
+    position:absolute;
+    top:10px;
+    left:1250px;
+    border:none;
+    border-radius:10px;
+    width:200px;
+}
+
+#search{
+    position:absolute;
+    left:1420px;
+    top:10px;
+}
+
+#map{
+    position:relative;
+    top:200px;
+    background-image:url("/assets/map.jpg") ;
+    background-size: cover;
+    height:680px;
+    width:95%;
+    margin:auto;
+    margin-top:20px;
+}
+/*.slider-container {
+    top:150px;
+    margin-top:200px;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styles for the images */
+/*.slider-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}*/
+
+/* Style for navigation buttons */
+/*.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}*/
+.slider-button {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+ .slider-container {
+            width: 85%;
+            overflow: hidden;
+            position: relative;
+            margin-top:20px;
+            height:420px;
+        }
+
+        /* CSS for the slider */
+        .slider {
+            display: flex;
+            height:440px;
+            width:800px;
+            margin:0 auto;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* CSS for individual slides */
+        .slide {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin:0 auto;
+            width:800px;
+        }
+/* Style for previous button */
+.prev {
+    left: 10px;
+}
+
+/* Style for next button */
+.next {
+    right: 10px;
+}
+
+/*MAP KA STRUCTURE*/
+.structure{
+    position:relative;
+    bottom:170px;
+}
+
+.leaflet-clickable {
+    cursor: pointer;
+}
+
+.leaflet-clickable:hover{
+    fill:rgba(205, 201, 197, 0.564);
+    stroke:rgba(0, 0, 0, 0.919);
+    stroke-width:3px;
+    stroke-opacity:100%;
+}
+
+.cont{
+    background:transparent;
+    position:relative;
+    top:5px;
+    padding:20px 20px;
+    left:150px;
+    width:70%;
+    height:10%;
+}
+
+#info-title{
+    display:flex;
+    justify-content:center;
+    color: white;
+    font-size: 33px;
+    margin:5px;
+}
+
+#info-title2{
+    display:flex;
+    justify-content:center;
+    color: white;
+    font-size: 25px;
+    margin-top:40px;
+}
+#info-title3{
+    padding-left: 20px;
+    color: white;
+    font-size: 25px;
+    margin-top:50px;
+}
+#info-title4{
+    position: relative;
+    left:300px;
+    color: white;
+    font-size: 25px;
+    margin-top:10px;
+}
+#info-title5{
+    padding-left: 20px;
+    color: white;
+    font-size: 25px;
+    margin-top:50px;
+}
+#info-title6{
+    position: relative;
+    left:300px;
+    color: white;
+    font-size: 25px;
+    margin-top:10px;
+}
+.leaflet-zoom-animated{
+    position:relative;
+    top:5px;
+    left:50%;
+}
+.aqi{
+    color:white;
+    font-size:40px;
+    font-family:'Noticia Text';
+    position:absolute;
+    left:30px;
+}
+.info{
+    display:block;
+    position:absolute;;
+    top:50px;
+    left:20px;
+    padding:10px;
+    margin:200px 10px;
+    background-color: black;
+    opacity: 0;
+    border-radius: 50px;
+    width: 450px;
+    height:450px;
+    border:2px solid white;
+    transition: opacity 0.1s ease-in-out; 
+}
+
+.leaflet-clickable{
+            padding: 50px;
+            background-color: red;
+            transition: transform 1.7s;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto;
+            z-index:1;
+            border-radius: 29px;
+            /*position:relative;
+            bottom:200px;*/
+  }
+  
+  .leaflet-clickable:hover {
+            transform: scale(1.09);
+            z-index:2;
+  }
+
+ /* CSS for the line graph container */
+        .graph-container {
+            width: 80%;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            position:relative;
+            top:200px;
+            left:30px;
+        }
+
+        /* CSS for the graph */
+        .graph {
+            width: 100%;
+            height: 300px;
+            border: 3.5px solid red;
+        }
+#g{
+    position:relative;
+    top:300px;
+    margin-left:30px;
+    margin-right:30px;
+    font-family:'noticia Text';
+    background-color:#844FB0;
+    color:white;
+    padding-left:20px;
+}
+
+#a{
+    background-color:grey;
+    width:10%;
+    position:relative;
+    bottom:528px;
+    height:625px;
+    padding-top:20px;
+    left:30px;
+    border:2px solid black;
+}
+
+#a button{
+    display:block;
+    margin:50px auto;
+    height:60px;
+    width:100%;
+    background-color:#BCC2BC;
+    border-radius:25px;
+}
