@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air and Water Quality</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="top"></div>
+        <div class="head">
+            <img src="/assets/kerela govt.png" class="govt">
+            <h1 class="gok">GOVERNMENT OF KERELA</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="navigation">
+<ul>
+                <li class="options"><button type="button" class="btn btn-light">Home <span class="material-symbols-outlined home">
+                    home
+                    </span></button></li>
+                <li class="options"><button type="button" class="btn btn-light">Map <span class="material-symbols-outlined map">
+                    map
+                    </span></button></li>
+                <li class="options"><button type="button" class="btn btn-light">Graph <span class="material-symbols-outlined graphkp">
+                    monitoring
+                    </span></button></li>
+                <li class="options"><button type="button" class="btn btn-light">Help <span class="material-symbols-outlined help">
+                    help
+                    </span></button></li>
+            </ul>
+        </div>
+    </nav>
+
+     <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="/assets/top.jpeg" alt="Image 1"></div>
+            <!-- <div class="slide"><img src="airpollution.jpg" alt="Image2"></div>
+            <div class="slide"><img src="image3.jpg" alt="Image 3"></div> -->
+        </div>
+    </div>
+    <!-- <div class="slider-container">
+        <div class="slider">
+        <img class="slide" src="top.jpeg" alt="Image 1">
+        <img class="slide" src="airpollution.jpg" alt="Image 2">
+        <img class="slide" src="image3.jpg" alt="Image 3"> 
+    </div> -->
+<!-- </div> -->
+    <button class="slider-button prev" onclick="prevSlide()">Previous</button>
+    <button class="slider-button next" onclick="nextSlide()">Next</button>
+    <main>
+        <div class="abt">
+            <div>
+                <h2 id="air">AIR QUALITY</h2>
+                <p>
+                    Air  quality in  Kerala  which is  a southwestern state of India, is relatively 
+                    better compared to many other Indian states.  Kerala has a unique geographical 
+                    and climatic characteristics which contribute to its better air quality.
+                </p>
+                <img src="/assets/air index.jpg" id="air_index">
+                <p>
+                    Air quality is a measure of the composition and concentration of various 
+                    substances present in the Earth's atmosphere, such as gases, particulate matter, 
+                    and other airborne pollutants. It reflects the state of the air in a particular 
+                    location at a specific time.
+                </p>
+ <p>
+                    Clean and healthy air is essential for human well-being, as it is the air we 
+                    breathe. Poor air quality can have detrimental effects on human life.
+                </p>
+            </div>
+            <div>
+                <h2 id="water">WATER QUALITY</h2>    
+                <p>
+                    Water quality in Kerala, which is a southwestern state of India is a critical aspect 
+                    of  environmental and public health management. Kerala's unique geographical features,
+                    abundant water resources, and various anthropogenic activities influence the quality 
+                    of its water.
+                </p>
+                <img src="/assets/water index.jpg" id="water_index">
+                <p>
+                    Water quality refers to the physical, chemical,  and biological characteristics of 
+                    water that determine its suitability for various uses, including drinking, recreation,
+                    agriculture, and sustaining aquatic ecosystems. It is a fundamental aspect of 
+                    environmental science and public health, as the quality of water can have profound 
+                    impacts on human well-being and the natural environment.
+                </p>
+                <p>
+                    Access to clean and safe drinking water is essential for preventing waterborne 
+                    diseases and ensuring the well-being of communities.Aquatic ecosystems, including 
+                    rivers, lakes, and oceans, depend on clean water to support diverse species and 
+                    maintain ecological balance.
+                </p>
+            </div>
+        </div>
+        <div class="images">
+            <div id="prime_minister">
+                <img src="/assets/modi ji.jpeg" id="pm">
+                <label for="pm" id="pm_lb">
+                    <a href="https://en.wikipedia.org/wiki/Narendra_Modi">Narendra Modi</a>
+                    <p>(Prime Minister of India)</p>
+                </label>
+            </div>
+            <div id="kerela_cm">
+                <img src="/assets/kerela cm.jpeg" id="cm">
+                <label for="cm" id="cm_lb">
+                    <a href="https://en.wikipedia.org/wiki/Pinarayi_Vijayan">Pinarayi Vijayan</a>
+                    <p>(Chief Minister of Kerela)</p>
+                </label>
+            </div>
+        </div>
+        <div id="searchbar">
+            <h2 class="aqi">AQI</h2>
+            <input type="text" placeholder="Search District">
+            <span class="material-symbols-outlined" id="search">
+                search
+            </span>
+        </div>
+        <div id="map">
+            <div class="structure">
+                <div class="cont" >
+                    <div class="info" id="me">
+                        <h3 id="info-title">KASARGOD</h3>
+                        <h1 id="info-title2">Graph will be shown here</h1>
+                        <h3 id="info-title3">CO</h3>
+                        <h3 id="info-title4">PM 10</h3>
+                        <h3 id="info-title5">PM 2.5</h3>
+                        <h3 id="info-title6">NO 2</h3>
+                        
+                    </div>
+                <svg class="leaflet-zoom-animated" width="900" height="1000" viewBox="-62 -92 459 684" style="transform: translate3d(-62px, -92px, 0px);">
+                    <!--ALLEPPEY-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8"  class="leaflet-clickable first" d="M175 357L173 353L167 353L167 370L171 396L183 423L196 423L204 418L200 416L199 413L201 412L200 410L202 408L200 408L199 403L195 402L191 402L191 405L185 404L188 402L186 394L188 389L185 388L183 383L176 384L177371L175 370L175 358z" data-name="ALLEPPEY"></path></g>
+                    
+                    <!--ERNAKULAM-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M223 319L217 316L209 316L204 318L193 314L192 316L179 315L168 326L162 323L156 325L161 344L163 345L162 346L166 362L168 352L172 354L173 353L175 356L174 357L179 359L183 356L186 356L191 361L192 359L194 359L195 356L196 357L198 355L198 351L200 349L204 351L203 349L206 347L205 344L210 344L210 341L212 339L216 341L217 340L211 336L214 337L216 334L219 335L225 326L232 327L240 325L238 323L233 322L236 321L236 318L230 322L223 320z" data-name="ERNAKULAM"></path></g>
+                    
+                    <!--IDUKKI-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M257 409L261 404L263 395L265 392L268 392L269 388L265 385L264 380L263 382L261 381L261 379L259 379L256 382L250 378L247 378L251 370L250 368L252 367L252 362L254 361L253 355L251 354L253 348L257 344L255 341L256 340L250 334L250 332L257 330L258 324L257 320L255 321L253 310L248 309L243 313L240 313L236 318L237 321L233 322L238 323L240 325L239 326L225 326L219 335L216 334L216 336L214 337L211 336L212 338L217 340L216 341L213 339L210 341L210 344L205 344L206 347L204 351L200 349L198 350L198 355L206 360L212 360L222 369L226 377L225 378L223 376L221 381L222 385L227 389L230 388L229 392L232 393L234 397L237 396L237 393L242 391L251 393L254 399L252 406L253 408L255 408z" data-name="IDUKKI"></path></g>
+                    
+                    <!--KASARGOD-->
+<g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M87 129L89 128L87 124L88 122L83 118L83 115L88 113L88 111L83 111L84 112L82 114L80 110L75 108L74 105L76 102L80 102L78 102L77 100L76 101L75 99L70 104L68 99L65 99L63 97L64 94L57 92L56 95L53 93L55 91L53 89L51 90L50 83L43 84L39 87L38 86L46 108L56 126L66 152L65 148L67 148L68 144L65 139L70 138L77 132L83 131L85 129z" data-name="KASARGOD" ></path></g>
+                    
+                    <!--KOLLAM-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M251 428L225 419L225 422L228 423L227 424L221 423L218 424L217 426L212 424L210 426L211 428L205 426L202 428L202 425L198 422L195 422L193 424L191 424L190 422L183 423L188 433L190 443L192 446L197 448L202 455L211 453L213 450L212 449L215 448L223 452L226 457L230 454L233 456L235 449L245 452L250 456L256 449L253 445L254 444L249 441L250 440L248 435L245 434L247 430L249 431L250 429z" data-name="KOLLAM" ></path></g>
+                    
+                    <!--KOTTAYAM-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M198 356L194 357L194 359L192 358L191 361L187 356L183 356L179 359L176 357L175 358L175 370L177 371L176 384L183 383L185 388L188 389L186 393L187 397L191 395L192 397L195 395L196 392L199 392L199 390L205 391L205 393L209 391L210 394L214 392L225 396L227 395L226 393L228 393L230 389L222 385L222 376L225 378L226 377L222 369L212 360L206 360L198 356z" data-name="KOTTAYAM"></path></g>
+                    
+                    
+                    <!--MALAPPURAM-->
+<g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="black" fill-opacity="0.8" class="leaflet-clickable first" d="M98 179L98 182L100 183L99 179z"></path></g><g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable" d="M181 231L182 227L184 227L190 222L191 216L183 214L172 206L170 208L167 205L163 206L164 203L162 201L157 205L158 206L156 206L153 209L154 210L152 212L150 212L149 216L152 220L145 225L139 225L133 228L132 227L128 231L130 233L127 236L128 237L125 237L132 268L137 279L146 277L147 273L146 274L144 272L145 269L143 266L145 264L149 264L151 261L153 261L153 259L154 260L156 258L160 258L164 260L168 257L171 258L171 251L174 252L175 250L170 249L171 247L168 247L168 245L171 245L172 242L178 239L177 232L179 230z" data-name="MALAPPURAM"></path></g>
+                    
+                     <!--PALAKKAD-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M217 311L218 309L215 303L217 287L215 286L215 283L221 283L220 277L222 275L223 268L218 267L217 263L213 260L201 256L204 247L211 247L214 245L213 244L211 246L208 243L208 237L204 236L204 234L207 231L206 228L204 227L198 232L187 230L182 232L179 230L178 239L172 242L171 245L168 245L167 247L170 247L170 249L175 250L174 252L171 251L171 257L165 258L164 260L160 258L156 258L154 260L153 259L153 261L151 261L150 264L145 264L143 266L145 268L144 272L146 274L147 273L147 275L155 277L159 270L165 273L173 273L176 271L177 273L183 273L184 274L181 278L182 280L178 287L180 293L185 298L194 302L198 307L205 309L209 308L209 311L216 311z" data-name="PALAKKAD" ></path></g>
+                    
+                    <!--PATHANAMTHITTA-->
+<g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M229 392L226 393L226 396L215 392L211 394L209 391L205 393L204 391L199 390L199 392L196 392L195 395L192 397L188 397L188 401L184 404L190 405L192 403L191 402L195 402L198 403L200 408L202 408L200 415L203 418L201 421L198 422L202 424L202 428L204 426L210 428L212 424L216 426L221 423L227 424L228 423L225 422L225 420L251 428L251 425L256 420L255 417L258 415L257 409L252 407L254 401L253 397L248 391L240 392L235 397L233 397L232 393L230 393z" data-name="PATHANAMTHITTA"></path></g>
+                    
+                    <!--THRISSUR-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M217 311L209 311L209 308L205 309L199 307L194 302L185 298L180 293L181 291L177 287L180 285L179 282L182 280L181 278L183 277L183 273L177 273L176 271L173 273L163 273L163 271L159 270L155 277L147 275L146 277L137 279L147 300L156 325L161 323L167 326L179 315L191 316L193 314L198 317L200 316L204 318L209 316L216 316L223 319L220 317L220 315L216 314L217 313z" data-name="THRISSUR" ></path></g>
+                    
+                    
+                    <!--THIRUVANANTHAPURAM-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M250 456L239 449L234 450L233 456L230 454L226 457L223 452L218 451L215 448L212 449L213 452L211 453L207 453L204 455L202 454L204 459L226 485L229 491L232 492L241 500L241 498L242 499L248 494L246 492L252 485L251 479L254 481L258 476L250 465L250 461L248 460L248 458L250 458z"
+                        data-name="THIRUVANANTHAPURAM"  ></path></g>
+<!--KANNUR-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M135 162L128 161L127 158L125 158L125 155L123 155L124 154L122 152L122 149L115 150L112 146L111 148L106 142L102 142L93 129L85 129L81 132L79 131L76 133L76 135L71 136L68 139L65 139L68 144L66 148L68 156L73 156L83 171L84 170L87 172L102 187L104 183L108 181L113 175L118 177L118 175L120 175L123 170L134 171L134 163zM98 179L100 182L98 183L99 181z"  data-name="KANNUR" ></path></g>
+                    
+                    <!--KOZHIKODE-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="white" fill-opacity="0.8" class="leaflet-clickable first" d="M120 175L118 175L118 177L113 175L108 181L104 183L102 187L100 184L99 185L105 203L107 206L112 208L115 213L117 218L116 219L125 238L127 236L128 237L128 234L130 234L128 232L132 227L133 228L139 225L145 225L151 220L149 216L150 213L153 210L154 211L154 208L151 205L149 205L148 201L146 203L143 202L139 200L137 196L132 194L131 190L133 185L127 184L123 181L120 175z" data-name="KOZHIKODE" ></path></g>
+                    
+                    <!--WAYANAD-->
+                    <g><path stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" stroke="black" stroke-opacity="0.5" stroke-width="1" fill="#ffffff" fill-opacity="0.8" class="leaflet-clickable first" d="M135 162L135 167L133 168L134 171L124 170L122 172L121 178L125 183L133 185L131 192L142 202L145 203L148 201L149 204L154 208L158 206L157 205L159 203L164 201L162 197L164 195L168 195L168 197L171 194L175 194L176 191L181 190L178 186L180 182L178 180L173 181L166 174L161 175L158 169L152 171L151 170L151 159L141 163L137 162z" data-name="WAYANAD" ></path></g></svg>
+            </div>
+            </div>
+        </div>
+        <!-- <div class="graph-container">
+        <canvas id="lineGraph" class="graph"></canvas>
+    </div> -->
+    </main>
+    <h1 id="g">GRAPHICAL ANALYSIS </h1>
+    <div class="graph-container">
+        <canvas id="lineGraph" class="graph"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Function to generate random data
+        function generateRandomData() {
+            const data = [];
+            for (let i = 0; i < 5; i++) {
+                data.push(Math.floor(Math.random() * 50) + 10); // Generate random values between 10 and 59
+            }
+            return data;
+        }
+
+        // Create the initial line graph with random data
+        const initialData = generateRandomData();
+        const ctx = document.getElementById('lineGraph').getContext('2d');
+        const myLineChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Random Data',
+                    data: initialData,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    pointRadius: 5,
+                    pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Update the line graph with new random data every 3 seconds
+        setInterval(() => {
+            const newData = generateRandomData();
+            myLineChart.data.datasets[0].data = newData;
+            myLineChart.update();
+        }, 3000);
+    </script>
+    <div id="a">
+        <button>PM-10</button>
+        <button>PM-2.5</button>
+        <button>SO2</button>
+        <button>N02</button>
+        <button>NH3</button>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+<script src="script.js"></script>
+</html>
